@@ -1,0 +1,126 @@
+/* Common */
+.cursor {
+    cursor: pointer; /* Apply pointer cursor style */
+}
+/* END Common */
+
+/* Table */
+#flexible-pricing-table .move-row {
+    cursor: move; /* Change cursor to indicate a draggable element */
+}
+
+.flexible-pricing-row {
+    width: 100%; /* Full-width row */
+}
+
+.flexible-pricing-row td {
+    vertical-align: middle; /* Center content vertically */
+    padding: 8px 0px; /* Vertical padding for table cells */
+}
+
+#flexible-pricing-table .text-center {
+    text-align: center; /* Center align text */
+}
+
+.button-disabled {
+    opacity: 0.6; /* Reduce opacity for disabled buttons */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.flexible-pricing-row .remove-row {
+    color: #FC0000; /* Red color for remove row button */
+}
+/* END Table */
+
+/* Input Custom */
+/* General styling for checkboxes */
+#flexible-pricing-table input[type="checkbox"] {
+    appearance: none; /* Remove default checkbox styling */
+    width: 20px; /* Set custom width */
+    height: 20px; /* Set custom height */
+    border: 2px solid #ddd; /* Default border */
+    border-radius: 4px; /* Rounded corners for the checkbox */
+    background-color: #f9f9f9; /* Default background color */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Position relative to handle custom ticks */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Change background color on hover */
+#flexible-pricing-table input[type="checkbox"]:hover {
+    background-color: #e3e3e3; /* Background color on hover */
+}
+
+/* Background color for checked state */
+#flexible-pricing-table input[type="checkbox"]:checked {
+    background-color: #0073aa; /* Blue background when checked */
+    border-color: #0073aa; /* Blue border when checked */
+}
+
+/* Create a custom tick mark when checkbox is checked */
+#flexible-pricing-table input[type="checkbox"]:checked::after {
+    content: '✔'; /* Tick symbol */
+    position: absolute; /* Position tick inside the checkbox */
+    color: white; /* White tick color */
+    font-size: 14px; /* Size of the tick mark */
+    left: 2px; /* Positioning of tick */
+    top: 8px; /* Positioning of tick */
+}
+
+/* Default background color when not checked */
+#flexible-pricing-table input[type="checkbox"]:not(:checked) {
+    background-color: #f9f9f9; /* Default background color */
+}
+/* END Input Custom */
+
+/* Color Picker */
+/* Styling for color picker and container */
+.wp-picker-container {
+    position: relative; /* Maintain the layout of the input */
+    display: inline-block; /* Keep inline layout to avoid breaking lines */
+    margin-right: 10px; /* Spacing between color pickers */
+}
+
+/* Hide input wrap to prevent layout issues */
+.wp-picker-container .wp-picker-input-wrap {
+    position: absolute; /* Position absolutely to avoid layout breaking */
+    left: 33px;
+    width: 100vw; /* Full-width to cover unwanted space */
+}
+
+.wp-picker-container .wp-color-picker-field.wp-color-picker {
+    border-top-right-radius: unset; /* Remove top-right border radius */
+    border-bottom-right-radius: unset; /* Remove bottom-right border radius */
+    border-right: unset; /* Remove right border */
+}
+
+.wp-picker-container .wp-picker-input-wrap .wp-picker-clear {
+    border-top-left-radius: unset; /* Remove top-left border radius */
+    border-bottom-left-radius: unset; /* Remove bottom-left border radius */
+    margin: 0px; /* Remove default margins */
+}
+
+/* Adjustments for the color palette and picker display */
+.wp-picker-container .wp-picker-holder,
+.wp-picker-open .wp-picker-holder {
+    position: absolute; /* Ensure the color palette is positioned correctly */
+    top: 100%; /* Position below the picker */
+    left: 0;
+    width: auto; /* Ensure the palette width is not affected by wrap */
+    z-index: 9999; /* High z-index to ensure it stays on top */
+    display: block !important; /* Force display when the picker is open */
+}
+
+/* Styling for the color input fields */
+.wp-color-picker-field {
+    width: 70px; /* Custom width for color input */
+    vertical-align: middle; /* Align vertically */
+    position: relative;
+    z-index: 1; /* Ensure it is not overlapped */
+}
+
+/* Ensure the color picker always stays on top */
+.wp-picker-container .wp-color-picker {
+    z-index: 9999;
+}
+/* END Color Picker */
