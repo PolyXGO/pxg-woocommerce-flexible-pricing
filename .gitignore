@@ -1,0 +1,36 @@
+# Thư mục node_modules (nếu bạn có sử dụng npm)
+node_modules/
+
+# Thư mục vendor (nếu bạn có sử dụng Composer)
+vendor/
+
+# Các file log
+*.log
+
+# Các file tạm thời
+*.tmp
+*.temp
+
+# Các file cấu hình IDE/Editor
+.idea/
+.vscode/
+nbproject/
+
+# Các file hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Các file PHPStorm
+/.idea/
+
+# Composer
+composer.lock
+
+# Perfex CRM cụ thể (thêm bất kỳ thư mục hoặc file nào mà bạn muốn bỏ qua)
+# Ví dụ:
+# public/uploads/
+# application/cache/
+# system/language/cache/
+
+# Debug files
+*.stackdump
