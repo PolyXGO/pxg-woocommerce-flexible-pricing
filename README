@@ -1,4 +1,15 @@
 A plugin for customizing the display of product prices in WooCommerce.
+
+<hr>
+
+Plugin installation .zip file is located in build directory. Download and install it on your WordPress site for use.
+
+Source code uses Webpack to bundle .js and .css files. To rebuild, after cloning the repository, run npm install in terminal at source directory to install required node_modules packages.
+
+Then, modify code as needed and rebuild using npm run build. .js and .css files in assets folder will be processed and stored in dist directory.
+
+<hr>
+
 Tutorial: https://wikipoly.com/en/pxg-woocommerce-flexible-pricing/
 
 🔴Follow us to receive more free sample source codes. Thank you!
